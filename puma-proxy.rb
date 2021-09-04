@@ -5,28 +5,28 @@
 class PumaProxy < Formula
   desc ""
   homepage ""
-  version "0.0.8"
+  version "0.1.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ianks/puma-proxy/releases/download/v0.0.8/puma-proxy_0.0.8_Darwin_x86_64.tar.gz"
-      sha256 "9689c283d314813a85d2791e06f978f0ea00c1ca389047f5ab398e32ce6d03df"
+      url "https://github.com/ianks/puma-proxy/releases/download/v0.1.0/puma-proxy_0.1.0_Darwin_x86_64.tar.gz"
+      sha256 "7382ef4a779c2e5ec7512b7248b42c05c897695351d08e2aceec4dc2b4522b44"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ianks/puma-proxy/releases/download/v0.0.8/puma-proxy_0.0.8_Darwin_arm64.tar.gz"
-      sha256 "e233b13f1d66916af5e3d5289c22b307a916aca751c566fc391abbbe70b8c02a"
+      url "https://github.com/ianks/puma-proxy/releases/download/v0.1.0/puma-proxy_0.1.0_Darwin_arm64.tar.gz"
+      sha256 "908e72bc7f36231093ea6622f6f9f5d525f54d82420a6842093c88fac23b7716"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ianks/puma-proxy/releases/download/v0.0.8/puma-proxy_0.0.8_Linux_x86_64.tar.gz"
-      sha256 "1709921698eb1495ca0c91a74319754c97efb3c6ebfa8d2f08f67ed0e24c95f5"
+      url "https://github.com/ianks/puma-proxy/releases/download/v0.1.0/puma-proxy_0.1.0_Linux_x86_64.tar.gz"
+      sha256 "259c8f5ad9af6f6678580f03edd02c5dfc4e73b402a1def2785148fcc51169fb"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ianks/puma-proxy/releases/download/v0.0.8/puma-proxy_0.0.8_Linux_arm64.tar.gz"
-      sha256 "4ae65181cbd0acfec8b97bad86853e68f113f06a935b044803e8e5bd845617a5"
+      url "https://github.com/ianks/puma-proxy/releases/download/v0.1.0/puma-proxy_0.1.0_Linux_arm64.tar.gz"
+      sha256 "65c93cdde0930918ac5cc1cd17f92a981013a5adbed98cd453abd1f4d1be421f"
     end
   end
 
